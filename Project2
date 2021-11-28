@@ -1,0 +1,32 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+	cout << "Ïðîãðàììà 'Âðåìåíà ãîäà' " << endl;
+	cout << "[1] Ëåòî\n[2] Îñåíü\n[3] Çèìà\n[4] Âåñíà" << endl;
+	char season;
+		cout << "Ââåäèòå âðåìÿ ãîäà: ";
+	cin >> season;
+	if (season == '1') {
+		system("color E");
+		cout << "Ñåé÷àñ ëåòî, ìîæíî íàäåâàòü ïàêåò íà ïàõ è ïðûãàòü â âîäó." << endl;
+	}
+	else if (season == '2') {
+		system("color 6");
+		cout << "Ñåé÷àñ îñåíü. Äîæäè, õîëîä, íåðâîç." << endl;
+	}
+	else if (season == '3') {
+		system("color 8");
+		cout << "Ñåé÷àñ çèìà. Õîëîäíî, ÷òî àæ ñîñêè ïðèêëåèëèñü ê ïóõîâèêó èçíóòðè." << endl;
+	}
+	else if (season == '4') {
+		system("color 2");
+		cout << "Ñåé÷àñ âåñíà. Îõ óæ ýòîò ïóáåðòàòíûé ïåðèîä è âåñåííåå îáîñòðåíèå~" << endl;
+	}
+	else {
+		cout << "Ïîãîäè... ×åãî òû âîîáùå ââ¸ë?\n";
+	}
+		return 0;
+}
