@@ -1,0 +1,61 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+	cout << "[+] Ïðîãðàììà - 'Ãåîìåòðè÷åñêèå ôèãóðû'" << endl << endl;
+	cout << "[1] Ëèíèÿ\n\n";
+	cout << "[+] Âûáåðèòå ôèãóðó: ";
+
+	int figure;
+	int form;
+
+	int linelenght;
+	char linetexture;
+
+	int a = 0;
+	int b = 0;
+
+	cin >> figure;
+	if (figure == 1) {
+		system("cls");
+		cout << "Âûáåðèòå òèï: \n\n";
+		cout << "[1] Ãîðèçîíòàëüíàÿ" << endl;
+		cout << "[2] Âåðòèêàëüíàÿ" << endl << endl;
+		cout << "-> Ââåäèòå çíà÷åíèå: ";
+		cin >> form;
+		if (form == 1) {
+			system("cls");
+			cout << "[+] Ââåäèòå äëèíó ëèíèè: ";
+			cin >> linelenght;
+			system("cls");
+			cout << "[+] Ââåäèòå òåêñòóðó ëèíèè: ";
+			cin >> linetexture;
+			system("cls");
+			while (a < linelenght) {
+				cout << linetexture;
+				a++;
+			}
+		}
+		else if (form == 2) {
+			system("cls");
+			cout << "[+] Ââåäèòå äëèíó ëèíèè: ";
+			cin >> linelenght;
+			system("cls");
+			cout << "[+] Ââåäèòå òåêñòóðó ëèíèè: ";
+			cin >> linetexture;
+			system("cls");
+			while (b < linelenght) {
+				cout << linetexture << "\n";
+				b++;
+			}
+		}
+	}
+	else {
+		cout << "Òàêîé ôîðìû ëèíèè íå ñóùåñòâóåò. Óäàëè âèíäó ïæ\n";
+		Sleep(2000);
+		return 0;
+	}
+	return 0;
+}
