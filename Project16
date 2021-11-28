@@ -1,0 +1,269 @@
+#include <iostream>
+using namespace std;
+#define clear system ("cls");
+int menufunctions();
+void clearc() {
+	clear;
+}
+void background() {
+	int vibor;
+	cout << "\tÌåíþ öâåòîâ ôîíà\n";
+	cout << "\t[1] - Áåëûé öâåò \n";
+	cout << "\t[2] - Çåëåíûé öâåò\n";
+	cout << "\t[3] - Êðàñíûé öâåò \n";
+	cout << "\t[4] - Ëèëîâûé öâåò\n";
+	cout << "\t[5] - Ñèíèé öâåò\n";
+	cout << "\t[6] - Âåðíóòüñÿ\n";
+	cout << "\t[7] - Âûéòè èç ôóíêöèè\n";
+	cout << "Âàø âûáîð -> ";
+	cin >> vibor;
+	switch (vibor)
+	{
+	case 1:
+		clear;
+		system("color F0");
+		background();
+		break;
+	case 2:
+		clear;
+		system("color 20");
+		background();
+		break;
+	case 3:
+		clear;
+		system("color 40");
+		background();
+		break;
+	case 4:
+		clear;
+		system("color 50");
+		background();
+		break;
+	case 5:
+		clear;
+		system("color 10");
+		background();
+		break;
+	case 6:
+		clear;
+		system("color 0F");
+		background();
+		break;
+	default:
+		break;
+	}
+}
+void colortext() {
+	int vibor;
+	cout << "\tÌåíþ öâåòîâ ôîíà\n";
+	cout << "\t[1] - Ñâåòëî-æåëòûé öâåò \n";
+	cout << "\t[2] - Çåëåíûé öâåò\n";
+	cout << "\t[3] - Êðàñíûé öâåò \n";
+	cout << "\t[4] - Ëèëîâûé öâåò\n";
+	cout << "\t[5] - Ñèíèé öâåò\n";
+	cout << "\t[6] - Âåðíóòüñÿ ê ïåðâîíà÷àëüíîìó\n";
+	cout << "\t[7] - Âûéòè èç ôóíêöèè\n";
+	cout << "Âàø âûáîð -> ";
+	cin >> vibor;
+	switch (vibor)
+	{
+	case 1:
+		clear;
+		system("color 0F");
+		colortext();
+		break;
+	case 2:
+		clear;
+		system("color 02");
+		colortext();
+		break;
+	case 3:
+		clear;
+		system("color 04");
+		colortext();
+		break;
+	case 4:
+		clear;
+		system("color 05");
+		colortext();
+		break;
+	case 5:
+		clear;
+		system("color 0F");
+		colortext();
+		break;
+	case 6:
+		clear;
+		system("color 0F");
+		colortext();
+		break;
+	case 7:
+		clear;
+		menufunctions();
+		break;
+	default:
+		break;
+	}
+}
+void sizeint() {
+	cout << sizeof(int) << " Ðàçìåðà INT\n";
+	cout << "íàæìèòå [1] äëÿ âîçðàùåíèå â ìåíþ";
+	int vibor;
+	cin >> vibor;
+	if (vibor == 1) {
+		clear
+			menufunctions();
+	}
+	else {
+		clear;
+		sizeint();
+	}
+
+}
+void sizechar() {
+	cout << sizeof(char) << " Ðàçìåðà char\n";
+	cout << "íàæìèòå [1] äëÿ âîçðàùåíèå â ìåíþ";
+	int vibor;
+	cin >> vibor;
+	if (vibor == 1) {
+		clear
+			menufunctions();
+	}
+	else {
+		clear;
+		sizechar();
+	}
+
+}
+void sizedouble() {
+	cout << sizeof(double) << " Ðàçìåðà double\n";
+	cout << "íàæìèòå [1] äëÿ âîçðàùåíèå â ìåíþ";
+	int vibor;
+	cin >> vibor;
+	if (vibor == 1) {
+		clear
+			menufunctions();
+	}
+	else {
+		clear;
+		sizedouble();
+	}
+
+}
+void sizefloat() {
+	cout << sizeof(float) << " Ðàçìåðà float\n";
+	cout << "íàæìèòå [1] äëÿ âîçðàùåíèå â ìåíþ";
+	int vibor;
+	cin >> vibor;
+	if (vibor == 1) {
+		clear
+			menufunctions();
+	}
+	else {
+		clear;
+		sizefloat();
+	}
+
+}
+void sizebool() {
+	cout << sizeof(bool) << " Ðàçìåðà bool\n";
+	cout << "íàæìèòå [1] äëÿ âîçðàùåíèå â ìåíþ";
+	int vibor;
+	cin >> vibor;
+	if (vibor == 1) {
+		clear
+			menufunctions();
+	}
+	else {
+		clear;
+		sizebool();
+	}
+
+}
+void hello() {
+	cout << "\t\tÏðèâåò, ÿ ôóíêöèÿ!";
+}
+void kvadrat5x5() {
+	cout << "\t\tÂîò âàø êâàäðàò!\n";
+	for (int y = 0; y < 5; y++) {
+		cout << "\t";
+		for (int x = 0; y < 5; x++) {
+			cout << "# ";
+		}
+		cout << "\n";
+	}
+	cout << "íàæìèòå 1 äëÿ âîçðàùåíèå â ìåíþ";
+	int vibor;
+	cin >> vibor;
+	if (vibor == 1) {
+		clear
+			menufunctions();
+	}
+	else {
+		clear;
+		kvadrat5x5();
+	}
+}
+int menufunctions() {
+	setlocale(0, "");
+	int vibor;
+	cout << "\tÌåíþ ôóíêöèé\n";
+	cout << "\t[1] - Î÷èùåíèå êîíñîëè\n";
+	cout << "\t[2] - Èçìåíåíèå öâåòà ôîíà êîíñîëè \n";
+	cout << "\t[3] - Èçìåíåíèå öâåòà òåêñòà êîíñîëè\n";
+	cout << "\t[4] - Âûâîä ðàçìåðà òèïà äàííûõ Int\n";
+	cout << "\t[5] - Âûâîä ðàçìåðà òèïà äàííûõ Char\n";
+	cout << "\t[6] - Âûâîä ðàçìåðà òèïà äàííûõ Double\n";
+	cout << "\t[7] - Âûâîä ðàçìåðà òèïà äàííûõ Float\n";
+	cout << "\t[8] - Âûâîä ðàçìåðà òèïà äàííûõ Bool\n";
+	cout << "\t[9] - Âûâîä ñîîáùåíèÿ 'Ïðèâåò ÿ ôóíêöèÿ'\n";
+	cout << "\t[10] - Âûâîä êâàäðàòà 5õ5 \n";
+	cout << "Ïîäòâåðäèòå âàø âûáîð - > ";
+	cin >> vibor;
+	switch (vibor)
+	{
+	case 1:
+		clearc();
+		break;
+	case 2:
+		clear;
+		background();
+		break;
+	case 3:
+		clear;
+		colortext();
+		break;
+	case 4:
+		clear;
+		sizeint();
+		break;
+	case 5:
+		clear;
+		sizechar();
+		break;
+	case 6:
+		clear;
+		sizedouble();
+		break;
+	case 7:
+		clear;
+		sizedouble();
+		break;
+	case 9:
+		clear;
+		hello();
+		break;
+	case 8:
+		clear;
+		sizebool();
+		break;
+	case 10:
+		clear;
+		kvadrat5x5();
+		break;
+	default:
+		clear;
+		menufunctions();
+		break;
+	}
+}
