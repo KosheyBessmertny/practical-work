@@ -1,0 +1,65 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+	cout << "[+] Âűáĺđčňĺ ěĺń˙ö: \n";
+	cout << "[1] ßíâŕđü\n";
+	cout << "[2] Ôĺâđŕëü\n";
+	cout << "[3] Ěŕđň\n";
+	cout << "[4] Ŕďđĺëü\n";
+	cout << "[5] Ěŕé\n";
+	cout << "[6] Čţíü\n";
+	cout << "[7] Čţëü\n";
+	cout << "[8] Ŕâăóńň\n";
+	cout << "[9] Ńĺíň˙áđü\n";
+	cout << "[10] Îęň˙áđü\n";
+	cout << "[11] Íî˙áđü\n";
+	cout << "[12] Äĺęŕáđü\n";
+	int choise;
+	cin >> choise;
+	switch (choise) {
+	case 1:
+		cout << "Âűáđŕí ěĺń˙ö: ßíâŕđü";
+		break;
+	case 2: 
+		cout << "Âűáđŕí ěĺń˙ö: Ôĺâđŕëü";
+		break;
+	case 3:
+		cout << "Âűáđŕí ěĺń˙ö: Ěŕđň";
+		break;
+	case 4: 
+		cout << "Âűáđŕí ěĺń˙ö: Ŕďđĺëü";
+		break;
+	case 5:
+		cout << "Âűáđŕí ěĺń˙ö: Ěŕé";
+		break;
+	case 6: 
+		cout << "Âűáđŕí ěĺń˙ö: Čţíü";
+		break;
+	case 7:
+		cout << "Âűáđŕí ěĺń˙ö: Čţëü";
+		break;
+	case 8:
+		cout << "Âűáđŕí ěĺń˙ö: Ŕâăóńň";
+		break;
+	case 9: 
+		cout << "Âűáđŕí ěĺń˙ö: Ńĺíň˙áđü";
+		break;
+	case 10:
+		cout << "Âűáđŕí ěĺń˙ö: Îęň˙đáü";
+		break;
+	case 11:
+		cout << "Âűáđŕí ěĺń˙ö: Íî˙áđü";
+		break;
+	case 12:
+		cout << "Âűáđŕí ěĺń˙ö: Äĺęŕáđü";
+		break;
+	default:
+		cout << "Ňŕęîăî ěĺń˙öŕ íĺ ńóůĺńňâóĺň!";
+		break;
+		return 0;
+	}
+	return 0;
+}
